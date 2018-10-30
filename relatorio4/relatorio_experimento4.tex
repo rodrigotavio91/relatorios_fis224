@@ -3,6 +3,7 @@
 \usepackage{indentfirst}
 \usepackage[portuguese]{babel}
 \usepackage{graphicx}
+ \usepackage{siunitx}
 \usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \linespread{1.5}
@@ -64,20 +65,53 @@ Note que, se $v_{0x}$ for nulo, o movimento na vertical será o que chamaremos d
 \subsection{MATERIAL UTILIZADO}
 
 Para a prática de expansão térmica de metais, utilizamos tubos metálicos, gerador de vapor, termômetro, suporte para medida de variação de tamanho dos tubos.
-Para a prática de gases ideais, utilizamos uma montagem igual a ilustrada na figura 2, contendo os seguintes itens: Reservatório de gás, manômetro de mercúrio, régua, reservatório de água com termostato e circulador de água e termômetros. Para os gráficos, foi utilizado papel monolog. 
+Para a prática de gases ideais, utilizamos uma montagem igual a ilustrada na figura \ref{fig:aparato_gases_ideais}, contendo os seguintes itens: Reservatório de gás, manômetro de mercúrio, régua, reservatório de água com termostato e circulador de água e termômetros. Para os gráficos, foi utilizado papel monolog. 
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.5]{aparato_gases_ideais.png}
+		\caption{Esquema do experimento}
+		\label{fig:aparato_gases_ideais}
+	\end{center}
+\end{figure}
+
+Para esta montagem, o volume do reservatório onde o gás está contido é dado em mililitros ($ml$) e é determinado pela altura $a$ que corresponde ao nível superior da borda da coluna de mercúrio, mais um volume de $1,01ml$ referente a parte superior do reservatório (parte laranja). Assim, o valor do volume deve ser dado por:
+
+\begin{equation}
+	V = (0,1021)a + 1,01
+	\label{eq:volume_gases_ideais}
+\end{equation}
+
+A pressão é medida em $kPa$ e o valor pode ser determinado por
+
+\begin{equation}
+P_{gas} = 94,06 + 0,1333h
+\label{eq:pressao_gases_ideais}
+\end{equation}
+
+onde o valor $94,06$ corresponde a pressão atmosférica em Viçosa e $0,1333$ ao produto $pg$.
+
+A temperatura, medida em graus Celsius foi transformada em Kelvin seguindo a relação:
+
+\begin{equation}
+T(K) = T(ºC) + 273,15
+\label{eq:celsius_kelvin}
+\end{equation}
 
 \subsection{PROCEDIMENTO}
 
-\subsubsection{Lançamento Horizontal}
-A Figura \ref{fig:lancamento} ilustra o aparato que foi utilizado para a realização do experimento. A esfera foi abandonada do topo da calha (ponto \textbf{A}), de altura $h$, e, ao passar pelo ponto \textbf{B}, a esfera abandonou a calha e atingiu o piso no ponto \textbf{C}. Este experimento foi repetido 3 vezes para cada altura $y$, mantendo fixa a altura $h$ da calha. Foram selecionadas 8 alturas $y$ para o experimento, medidas a cada ajuste do aparato utilizando uma régua centimetrada: $138cm$, $128cm$, $118cm$, $108cm$, $98cm$, $88cm$, $78cm$ e $68cm$.
+\subsubsection{Expansão Térmica}
+Na montagem utilizada (figura \ref{fig:aparato_expansao_termica}), um tubo metálico tem uma extremidade fixa e outra livre cujo avanço foi medido indiretamente através do deslocamento angular de um eixo.
+
+A temperatura ambiente foi medida utilizando um termômetro de mercúrio, encontrando o valor de $(21,00 \pm 0,05) ºC$. Foram utilizados 3 tubos (Alumínio, Latão e Cobre), e seus comprimentos foram medidos em temperatura ambiente utilizando uma fita métrica milimetrada, encontrando os valores de $(75,00 \pm 0,05)cm$, $(74,80 \pm 0,05) cm$ e $(74,80 \pm 0,05)cm$ respectivamente. Nos experimentos com cada tubo, o ângulo inicial do mostrador foi iniciado a partir de $0$. A temperatura do vapor na saída da mangueira conectada ao gerador de vapor ($T_c$) foi medida utilizando o termômetro de mercúrio, com o valor de $(95,00 \pm 0,05)ºC$.
 
 A base horizontal da calha foi nivelada utilizando o nível para garantir que a esfera possuísse $v_{0y} = 0$ ao abandonar-la, garantindo um lançamento horizontal.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[scale=0.5]{lancamento_horizontal.png}
+		\includegraphics[scale=0.5]{aparato_expansao_termica.png}
 		\caption{Esquema do experimento}
-		\label{fig:lancamento}
+		\label{fig:aparato_expansao_termica}
 	\end{center}
 \end{figure}
 
